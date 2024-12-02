@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		38B4DFBAC5886E7E7CB6CAB8 /* Pods_Dosirak_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD62D1974E85D29AF504832E /* Pods_Dosirak_admin.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B5AD01782CFE40A3002977A7 /* Dosirak-admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dosirak-admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD62D1974E85D29AF504832E /* Pods_Dosirak_admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dosirak_admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED83A741CCF6399821842EF /* Pods-Dosirak-admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dosirak-admin.release.xcconfig"; path = "Target Support Files/Pods-Dosirak-admin/Pods-Dosirak-admin.release.xcconfig"; sourceTree = "<group>"; };
+		C9BDCB79BF22B6A9A10216C9 /* Pods-Dosirak-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dosirak-admin.debug.xcconfig"; path = "Target Support Files/Pods-Dosirak-admin/Pods-Dosirak-admin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B4DFBAC5886E7E7CB6CAB8 /* Pods_Dosirak_admin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9121D9E2BFE872697D494F5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD62D1974E85D29AF504832E /* Pods_Dosirak_admin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5AD016F2CFE40A3002977A7 = {
 			isa = PBXGroup;
 			children = (
 				B5AD017A2CFE40A3002977A7 /* Dosirak-admin */,
 				B5AD01792CFE40A3002977A7 /* Products */,
+				B693CFC5D9D36A40F546E196 /* Pods */,
+				9121D9E2BFE872697D494F5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B693CFC5D9D36A40F546E196 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9BDCB79BF22B6A9A10216C9 /* Pods-Dosirak-admin.debug.xcconfig */,
+				BED83A741CCF6399821842EF /* Pods-Dosirak-admin.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +93,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5AD018B2CFE40A5002977A7 /* Build configuration list for PBXNativeTarget "Dosirak-admin" */;
 			buildPhases = (
+				A892A04A704A595D4F175B2E /* [CP] Check Pods Manifest.lock */,
 				B5AD01742CFE40A3002977A7 /* Sources */,
 				B5AD01752CFE40A3002977A7 /* Frameworks */,
 				B5AD01762CFE40A3002977A7 /* Resources */,
@@ -77,8 +106,6 @@
 				B5AD017A2CFE40A3002977A7 /* Dosirak-admin */,
 			);
 			name = "Dosirak-admin";
-			packageProductDependencies = (
-			);
 			productName = "Dosirak-admin";
 			productReference = B5AD01782CFE40A3002977A7 /* Dosirak-admin.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +154,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A892A04A704A595D4F175B2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dosirak-admin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5AD01742CFE40A3002977A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +192,7 @@
 /* Begin XCBuildConfiguration section */
 		B5AD018C2CFE40A5002977A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BDCB79BF22B6A9A10216C9 /* Pods-Dosirak-admin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -168,6 +221,7 @@
 		};
 		B5AD018D2CFE40A5002977A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED83A741CCF6399821842EF /* Pods-Dosirak-admin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
