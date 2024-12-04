@@ -97,6 +97,7 @@
 				B5AD01742CFE40A3002977A7 /* Sources */,
 				B5AD01752CFE40A3002977A7 /* Frameworks */,
 				B5AD01762CFE40A3002977A7 /* Resources */,
+				5134DDF9E97276245387D522 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +156,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5134DDF9E97276245387D522 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dosirak-admin/Pods-Dosirak-admin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dosirak-admin/Pods-Dosirak-admin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dosirak-admin/Pods-Dosirak-admin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A892A04A704A595D4F175B2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
